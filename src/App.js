@@ -5,18 +5,21 @@ import ThankYou from "./components/ThankYou";
 import { useState } from "react";
 
 function App() {
-  const[showThankYouPage, setShowThankYouPage] = useState(false);
-  const[rating, setRating] = useState(null);
+  const [showThankYouPage, setShowThankYouPage] = useState(false);
+  const [rating, setRating] = useState(null);
 
   return (
     <>
-    {showThankYouPage ? (
-      <ThankYou rating={rating}/>
+      {showThankYouPage ? (
+        <ThankYou rating={rating} />
       ) : (
-      <Rating rating={rating} 
-      setRating={setRating} 
-      setShowThankYouPage={setShowThankYouPage} />
-      )};
+        <Rating
+          rating={rating}
+          setRating={setRating}
+          setShowThankYouPage={setShowThankYouPage}
+        />
+      )}
+      ;
     </>
   );
 }

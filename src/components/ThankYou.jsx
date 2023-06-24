@@ -3,7 +3,7 @@ import Card from "./Card";
 import "./ThankYou.css";
 import tY from "../media/illustration-thank-you.svg";
 
-const ThankYou = ({rating}) => {
+const ThankYou = ({ rating }) => {
   return (
     <Card>
       <div className="thank-you-img-container">

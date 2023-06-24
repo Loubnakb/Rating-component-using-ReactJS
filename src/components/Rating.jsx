@@ -3,7 +3,7 @@ import Card from "../components/Card";
 import "./Rating.css";
 import starImg from "../media/icon-star.svg";
 
-const Rating = ({rating, setRating, setShowThankYouPage}) => {
+const Rating = ({ rating, setRating, setShowThankYouPage }) => {
   const [activeRatings, setActiveRatings] = useState({
     oneStar: true,
     twoStars: false,
@@ -15,7 +15,7 @@ const Rating = ({rating, setRating, setShowThankYouPage}) => {
   const handleSubmit = () => {
     if (!rating) return;
     setShowThankYouPage(true);
-  }
+  };
 
   return (
     <Card>
@@ -124,7 +124,9 @@ const Rating = ({rating, setRating, setShowThankYouPage}) => {
           5
         </div>
       </div>
-      <button className="submit-btn" onClick={handleSubmit}>Submit</button>
+      <button className="submit-btn" onClick={handleSubmit}>
+        Submit
+      </button>
     </Card>
   );
 };

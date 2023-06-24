@@ -1,0 +1,19 @@
+.card{
+    max-width: 400px;
+    height: 400px;
+    background-image: linear-gradient(
+        320deg,
+        hsl(216deg 12% 8%) 0%,
+        hsl(220deg 13% 9%) 20%,
+        hsl(214deg 14% 10%) 29%,
+        hsl(218deg 14% 11%) 36%,
+        hsl(213deg 15% 12%) 43%,
+        hsl(218deg 16% 13%) 50%,
+        hsl(215deg 17% 14%) 57%,
+        hsl(217deg 17% 15%) 64%,
+        hsl(214deg 17% 16%) 71%,
+        hsl(215deg 20% 17%) 80%,
+        hsl(213deg 20% 18%) 100%
+      );    border-radius: 1.25rem;
+    padding: 2rem;
+}
